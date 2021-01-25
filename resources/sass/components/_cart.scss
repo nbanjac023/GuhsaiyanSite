@@ -1,0 +1,95 @@
+.cart {
+    @include breakb4(xsmall) {
+        width: 35rem;
+    }
+    display: none;
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    width: 40rem;
+    background-color: var(--color-ocean-blue-dark);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    border-radius: 10px;
+    z-index: 22;
+    overflow-y: scroll;
+    max-height: 54vh;
+
+    &--active {
+        display: flex;
+        flex-direction: column;
+        animation: moveInTop 0.3s;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &--block {
+        position: relative !important;
+        top: 0;
+        left: 0;
+        max-height: 100vh !important;
+        max-width: 100%;
+    }
+
+    &-item {
+        margin: 2rem 0;
+        border-radius: 10px;
+        width: 90%;
+        //height: 5rem;
+        background-color: var(--color-grey-light);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+
+        &:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+
+        &__img-container {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            //padding: 1rem 0;
+        }
+        &__img {
+            width: 100%;
+            margin-left: 2rem;
+            border-radius: 10px;
+            align-self: center;
+        }
+
+        &__content {
+            width: 60%;
+            color: var(--color-ocean-blue-dark);
+        }
+        &__heading {
+            font-size: 1.5rem;
+        }
+        &__btn-container {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__delete-btn {
+            display: block;
+            margin-right: 2rem;
+            width: 5rem;
+            height: 4rem;
+            background-color: var(--color-pink);
+            background-image: url("/storage/img/trash_icon.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            border-radius: 10px;
+
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

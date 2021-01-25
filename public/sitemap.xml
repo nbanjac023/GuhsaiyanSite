@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+    <loc>https://guhsaiyan.com/</loc>
+    <lastmod>2019-12-17T00:10:13+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://guhsaiyan.com/cart</loc>
+    <lastmod>2019-12-17T00:10:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://guhsaiyan.com/login</loc>
+    <lastmod>2019-12-17T00:10:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://guhsaiyan.com/register</loc>
+    <lastmod>2019-12-17T00:10:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://guhsaiyan.com/about/shipping</loc>
+    <lastmod>2019-12-17T00:10:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://guhsaiyan.com/about/terms</loc>
+    <lastmod>2019-12-17T00:10:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://guhsaiyan.com/about/contact</loc>
+    <lastmod>2019-12-17T00:10:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://guhsaiyan.com/about/sizes</loc>
+    <lastmod>2019-12-17T00:10:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://guhsaiyan.com/about/reclamation</loc>
+    <lastmod>2019-12-17T00:10:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://guhsaiyan.com/about/cancel</loc>
+    <lastmod>2019-12-17T00:10:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+
+</urlset>

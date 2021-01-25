@@ -1,0 +1,75 @@
+.dashboard {
+    &__navbar {
+        font-size: 1.7rem;
+        background-color: var(--color-grey-light);
+        padding: 0;
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            width: 100%;
+            // padding: 3rem 0;
+        }
+
+        &-item {
+            text-transform: uppercase;
+            text-align: center;
+            background-color: var(--color-ocean-blue-light);
+            padding: 1rem 0;
+            width: 100%;
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+        &-link {
+            text-decoration: none;
+
+            &,
+            &:visited {
+                color: var(--color-grey-light);
+            }
+            &:hover {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        background-color: var(--color-grey-light);
+        flex-direction: column;
+        align-items: center;
+
+        &-title {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__form-input {
+        width: 80%;
+        height: 3rem;
+        border: none;
+        margin-right: 2rem;
+        border-radius: 10px;
+        padding-left: 2rem;
+        font-size: inherit;
+        font-family: inherit;
+        font-size: 1.5rem;
+        outline: none;
+    }
+    &__form-btn {
+        font-size: 1.3rem;
+    }
+}

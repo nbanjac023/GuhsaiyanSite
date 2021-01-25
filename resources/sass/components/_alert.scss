@@ -1,0 +1,30 @@
+.alert {
+    position: fixed;
+    width: 50%;
+    height: 5rem;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-ocean-blue-dark);
+
+    & > h1 {
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    &--success {
+        background-color: #30a64a;
+    }
+    &--error {
+        background-color: rgba(220, 53, 69, 0.9);
+    }
+
+    &--hidden {
+        display: none;
+    }
+}

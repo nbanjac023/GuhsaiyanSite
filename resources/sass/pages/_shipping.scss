@@ -1,0 +1,67 @@
+.shipping {
+    &__form {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        color: var(--color-primary);
+
+        &-heading {
+            font-size: 2rem !important;
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+
+        &-group {
+            display: flex;
+            flex-direction: column;
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+        }
+        &-group-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-label {
+            margin-bottom: 0.5rem;
+        }
+        &-input {
+            height: 3rem;
+            border-radius: 10px;
+            background-color: transparent;
+            border: 1px solid var(--color-primary);
+            font-size: 1.5rem;
+            font-family: inherit;
+            text-align: center;
+            color: var(--color-primary);
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-select {
+            height: 3rem;
+            border: 1px solid var(--color-primary);
+            background-color: transparent;
+            color: var(--color-primary);
+            font-size: 1.5rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-btn-container {
+            margin-top: 2rem;
+            color: var(--color-grey-light);
+            display: flex;
+            justify-content: center;
+        }
+        &-error {
+            color: var(--color-red);
+        }
+    }
+}

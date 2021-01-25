@@ -1,0 +1,107 @@
+.login {
+    &__background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 1;
+
+        &-shape {
+            position: absolute;
+            top: -5%;
+            left: 0;
+            z-index: 0;
+        }
+    }
+    &__container {
+        @include breakb4(small) {
+            margin: 5rem auto !important;
+        }
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 40%;
+        background-color: var(--color-ocean-blue-dark);
+        border-radius: 10px;
+        margin-bottom: 10rem;
+    }
+
+    &__heading {
+        color: var(--color-primary);
+        margin-top: 5rem;
+    }
+    &__heading-sm {
+        font-size: 4rem;
+    }
+    &__text {
+        font-size: 1.3rem;
+        color: var(--color-primary);
+    }
+    &__form {
+        @include breakb4(small) {
+            width: 80%;
+        }
+        @include breakb4(xsmall) {
+            width: 100%;
+        }
+        margin-top: 3rem;
+        width: 70%;
+
+        &-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--color-primary);
+        }
+        &-label {
+            align-self: flex-start;
+            font-size: 1.3rem;
+        }
+        &-input {
+            background-color: transparent;
+            border: 1px solid var(--color-primary);
+            text-align: center;
+            color: var(--color-primary);
+            font-size: 1.7rem;
+            margin: 1rem 0;
+            // height: 3.5rem;
+            padding: 1rem 0;
+            width: 100%;
+            border-radius: 10px;
+            transition: all 0.2s;
+
+            &:focus {
+                outline: none;
+            }
+            &:focus:invalid {
+                border-color: var(--color-pink);
+                color: var(--color-pink);
+            }
+        }
+        &-btn-container {
+            margin-top: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__register-container {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+    &__register-anchor {
+        &,
+        &:visited {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+    }
+}

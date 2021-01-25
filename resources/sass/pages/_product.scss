@@ -1,0 +1,262 @@
+.section-product {
+    .product {
+        position: relative;
+        z-index: 10;
+        @include breakb4(large) {
+            margin-top: 5rem;
+            justify-content: flex-start;
+        }
+        &__card {
+            margin: 1rem auto;
+            background-color: var(--color-grey-light);
+            border-radius: 10px;
+            width: 80%;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        &__image {
+            display: block;
+            // width: 100%;
+            height: 100%;
+            align-self: center;
+            padding: 2rem;
+            object-fit: cover;
+        }
+
+        &__images {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            height: 10rem;
+        }
+
+        .no-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-pink);
+
+            & > p {
+                padding: 0 1rem;
+            }
+        }
+
+        &__small-wrapper {
+            margin-top: 1.4rem;
+            height: 100%;
+            width: 50%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+        // Small images
+        &__small {
+            width: 100%;
+            height: 100%;
+            align-self: center;
+            object-fit: contain;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .product-info {
+        @include breakb4(small) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+        }
+        position: relative;
+        z-index: 1;
+        border-left: 1px solid var(--color-ocean-blue-dark);
+        padding-left: 3rem;
+
+        @include breakb4(medium) {
+            border: none;
+            padding: 0;
+        }
+
+        &__heading {
+            @include breakb4(big-desktop) {
+                font-size: 4rem;
+            }
+            @include breakb4(large) {
+                font-size: 3rem;
+            }
+            @include breakb4(medium) {
+                font-size: 3rem;
+            }
+            @include breakb4(small) {
+                font-size: 2.5rem;
+            }
+            font-size: 3.5rem;
+            line-height: 1.3;
+            text-transform: uppercase;
+            color: var(--color-ocean-blue-dark);
+        }
+        &__subheading {
+            @include breakb4(big-desktop) {
+                font-size: 2rem;
+            }
+            @include breakb4(large) {
+                font-size: 1.5rem;
+            }
+            @include breakb4(medium) {
+                font-size: 1.5rem;
+            }
+
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            color: var(--color-ocean-blue-dark);
+        }
+        &__price {
+            @include breakb4(medium) {
+                font-size: 2rem;
+            }
+            background-color: var(--color-ocean-blue-dark);
+            display: inline-block;
+            padding: 0 1rem;
+            font-size: 2.2rem;
+            color: var(--color-primary);
+            margin-top: 2rem;
+
+            &--small {
+                margin-top: 0;
+                font-size: 2rem;
+                padding: 0.5rem;
+            }
+        }
+
+        &__table-container {
+            margin-top: 2rem;
+        }
+        &__table {
+            font-size: 2rem;
+            width: 80%;
+            @include breakb4(medium) {
+                font-size: 1.5rem;
+            }
+            @include breakb4(small) {
+                width: 100%;
+            }
+        }
+        &__table,
+        &__table td,
+        &__table tr,
+        &__table th {
+            border: 1px solid var(--color-ocean-blue-dark);
+            color: var(--color-ocean-blue-dark);
+            text-align: center;
+        }
+        &__table th {
+            padding: 0.5rem;
+        }
+        &__size-howto {
+            margin-top: 3rem;
+            font-size: 1.7rem;
+        }
+        &__size-link {
+            &,
+            &:visited {
+                color: var(--color-primary);
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        &__select {
+            @include breakb4(medium) {
+                width: 20rem;
+            }
+            @include breakb4(small) {
+                width: 50%;
+                padding-left: 1rem;
+            }
+            margin-top: 3rem;
+            font-size: 2rem;
+            line-height: 1.3;
+            width: 30rem;
+            height: 3.5rem;
+            border-radius: 10px;
+            background-color: transparent;
+            color: var(--color-ocean-blue-dark);
+            border: 0.2rem solid var(--color-ocean-blue-dark);
+            text-align-last: center;
+            
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &__form-group {
+            margin: 3rem 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 2rem;
+        }
+        &__form-label {
+            font-size: inherit;
+            color: var(--color-ocean-blue-dark);
+            margin-right: 2rem;
+            text-transform: uppercase;
+        }
+
+        &__form-input {
+            border-radius: 10px;
+            border: 2px solid var(--color-ocean-blue-dark);
+            background-color: transparent;
+            color: var(--color-ocean-blue-dark);
+            height: 3rem;
+            width: 4rem;
+            font-size: inherit;
+            text-align: center;
+
+            &:focus {
+                outline: none;
+            }
+        }
+        &__btn {
+            @include breakb4(medium) {
+                font-size: 1.5rem;
+            }
+            font-size: 1.8rem;
+        }
+
+        &__not-available {
+            align-self: center;
+            font-size: 2rem;
+            text-align: center;
+        }
+        &__not-available-emoji {
+            animation: upAndDown 1s infinite;
+            font-size: 4rem;
+            padding-bottom: 2.3rem;
+        }
+        &__not-available-heading {
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+// Base file
+
+:root {
+    --color-primary: #e0a330;
+    --color-grey-light: #ebebeb;
+    --color-grey-light-2: #fafafa;
+    --color-ocean-blue-light: #181b23;
+    --color-ocean-blue-light-2: #1d232d;
+    --color-ocean-blue-dark: #11111b;
+    --color-pink: #f2275e;
+    --color-red: #f65058ff;
+    --color-white: #fff;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px -> 10px/16px(default browser font size) = 62.5%
+    scroll-behavior: smooth;
+
+    @include break(tab-land) {
+        font-size: 56.25%;
+    }
+    @include break(tab-port) {
+        font-size: 50%;
+    }
+    @include break(big-desktop) {
+        font-size: 75%;
+    }
+}
+
+body {
+    background-image: var(--color-white);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    user-select: none;
+}
+
+.row {
+    position: relative !important;
+}
+.container {
+    position: relative;
+}

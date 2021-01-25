@@ -1,0 +1,38 @@
+#successAnimationCircle {
+    stroke-dasharray: $circle-length $circle-length;
+    stroke: #30a64a;
+}
+
+#successAnimationCheck {
+    stroke-dasharray: $check-length $check-length;
+    stroke: #30a64a;
+}
+
+#successAnimation.animated {
+    animation: 1s ease-out 0s 1 both scaleAnimation;
+
+    #successAnimationCircle {
+        animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle;
+    }
+
+    #successAnimationCheck {
+        animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck;
+    }
+}
+
+#animate {
+    background-color: var(--color-grey-light-2);
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    bottom: 100px;
+    // color: #30a64a;
+    left: 50%;
+    outline: 0;
+    padding: 10px 30px;
+    position: absolute;
+    transform: translateX(-50%);
+    &:active {
+        background: var(--color-grey-light-2);
+    }
+}

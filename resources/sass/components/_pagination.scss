@@ -1,0 +1,30 @@
+.pagination {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    display: flex;
+    list-style: none;
+
+    .page-item {
+        padding: 1rem 2rem;
+        background-color: var(--color-grey-light);
+        border-radius: 10px;
+    }
+
+    .page-item:not(:last-child) {
+        margin-right: 1rem;
+    }
+    .page-item,
+    .active {
+        color: var(--color-primary) !important;
+    }
+    .page-link {
+        text-decoration: none;
+        &:visited {
+            color: var(--color-ocean-blue-dark);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

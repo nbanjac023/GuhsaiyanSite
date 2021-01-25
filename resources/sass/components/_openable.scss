@@ -1,0 +1,215 @@
+.openable {
+    width: 100%;
+    border: 2px solid var(--color-grey-light);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-grey-light-2);
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &--success {
+        background-color: rgb(198, 252, 111);
+    }
+    &--false {
+        background-color: rgb(189, 74, 74);
+    }
+    &--invalid {
+        background-color: rgba($color: #603c1d, $alpha: 1) !important;
+    }
+
+    &__form-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        font-size: 1.8rem;
+    }
+    &__form-select {
+        font-size: 1.8rem;
+        border: none;
+    }
+
+    &__btn {
+        // margin-top: 1rem;
+        width: 100%;
+        padding: 2rem 3rem;
+        border: none;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        background-color: var(--color-ocean-blue-dark);
+        color: var(--color-grey-light);
+
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__btn-not-hoverable {
+        cursor: default !important;
+    }
+
+    &__closed {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__title {
+        margin-left: 1.8rem;
+        padding: 1rem 0;
+        justify-self: flex-start;
+        font-size: 1.7rem;
+    }
+    &__icon {
+        justify-self: flex-end;
+        margin-right: 1.8rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 100rem;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-grey-light);
+        color: var(--color-ocean-blue-dark);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__content {
+        display: none;
+        width: 100%;
+
+        &:hover {
+            cursor: default;
+        }
+
+        &--opened {
+            display: block !important;
+        }
+        &-textarea-wrapper {
+            width: 95%;
+            margin: 2rem auto;
+        }
+
+        &-actions {
+            margin-top: 2rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-action {
+            font-size: 2.5rem;
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+
+            &--reply {
+                color: var(--color-grey-light);
+            }
+            &--delete {
+                background-color: transparent;
+                border: none;
+                color: var(--color-grey-light);
+            }
+        }
+
+        &-textarea {
+            border-radius: 10px;
+            padding: 3rem;
+            background-color: var(--color-ocean-blue-dark);
+            color: #fff;
+        }
+        &-info {
+            margin-top: 2rem;
+            margin-left: 1.8rem;
+            margin-bottom: 2rem;
+
+            &-text {
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+        }
+
+        &-payment-wrap {
+            margin-top: 3rem;
+            width: 100%;
+            font-size: 1.5rem;
+            background-color: var(--color-primary);
+        }
+        &-payment-text {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        &-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        &-item {
+            background-color: var(--color-grey-light);
+            width: 90%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+
+            &-wrap {
+                display: flex;
+                align-items: center;
+            }
+
+            &-text-wrapper {
+                margin: 1rem;
+                width: 50%;
+            }
+
+            &-text {
+                font-size: 1.7rem;
+                font-weight: 400;
+            }
+
+            &-link {
+                font-size: 2rem;
+                color: var(--color-ocean-blue-dark);
+                align-self: flex-end;
+                margin-right: 2rem;
+                margin-bottom: 1.3rem;
+            }
+
+            &-img-wrapper {
+                display: flex;
+                justify-content: center;
+                width: 50%;
+            }
+
+            &-img {
+                margin-top: 1rem;
+                align-self: center;
+                height: 10rem;
+            }
+        }
+    }
+}

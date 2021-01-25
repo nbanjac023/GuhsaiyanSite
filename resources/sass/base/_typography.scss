@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700,700i,900&display=swap");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.heading-primary-sm {
+    font-size: 3rem !important;
+    text-transform: uppercase;
+}
+
+.heading-primary-m {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+.heading-primary-l {
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+.heading-primary-xl {
+    font-size: 10rem;
+    text-transform: uppercase;
+}
+.heading-small {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
